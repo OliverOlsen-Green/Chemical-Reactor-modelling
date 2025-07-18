@@ -55,8 +55,8 @@ Xa_eq = real_solutions[0]
 
 Xa = sp.Symbol('Xa')
 # Define the rate equation symbolically
-Ca = sp.factor((CaO * (1 - Xa)) ** a) # concentration of component a to the poower of the stoichometric coefficent 
-Cb = sp.factor((CbO - ((b/a) * CaO * Xa)) ** b)# concentration of component b to the poower of the stoichometric coefficent 
+Ca = sp.factor((CaO * (1 - Xa)) ** a) # concentration of component a to the power of the stoichometric coefficent 
+Cb = sp.factor((CbO - ((b/a) * CaO * Xa)) ** b)# concentration of component b to the power of the stoichometric coefficent 
 Cc = sp.factor((CcO + ((c/a) * CaO * Xa)) ** c)
 Cd = sp.factor((CdO + ((d/a) * CaO * Xa)) ** d)
 rate = (K1 * Ca * Cb) - (K2 * Cc * Cd)

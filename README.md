@@ -1,6 +1,4 @@
 # Chemical-Reactor-modelling
-# Chemical Reactor Simulations
-
 This repository contains Python-based simulations of chemical reactors, including:
 
 - Reversible Plug Flow Reactor (PFR)

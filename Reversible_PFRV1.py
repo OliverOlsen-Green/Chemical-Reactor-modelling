@@ -12,7 +12,7 @@ import pandas as pd
 
 Xa_val = sp.Symbol('X_val')
 
-# Define constants (you can use numerical values or keep them symbolic)
+
 CaO = 1.5  # Initial concentration of A
 CbO = 1 #initial concentration of B
 CcO = 0 #initial concentration of C
@@ -41,7 +41,7 @@ eqn = sp.Eq(lhs / rhs, Kc)
 # Solve symbolically
 Xa_solutions = sp.solve(eqn, Xa_val)
 
-# Filter out non-physical or complex results (e.g. Xa < 0 or > 1)
+# Filter out non-physical or complex results
 real_solutions = [sol.evalf() for sol in Xa_solutions if sol.is_real and 0 <= sol.evalf() <= 1]
 
 # Display the results
@@ -54,7 +54,7 @@ for sol in real_solutions:
 Xa_eq = real_solutions[0]
 
 Xa = sp.Symbol('Xa')
-# Define the rate equation symbolically
+# Define the rate equation
 Ca = sp.factor((CaO * (1 - Xa)) ** a) # concentration of component a to the power of the stoichometric coefficent 
 Cb = sp.factor((CbO - ((b/a) * CaO * Xa)) ** b)# concentration of component b to the power of the stoichometric coefficent 
 Cc = sp.factor((CcO + ((c/a) * CaO * Xa)) ** c)

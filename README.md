@@ -1,23 +1,11 @@
 # Chemical-Reactor-modelling
-This repository contains Python-based simulations of chemical reactors, including:
+This repository contains Python-based simulations for simplifed reactor models, including:
 
 - Reversible Plug Flow Reactor (PFR)
 - Reversible Continuous Stirred-Tank Reactor (CSTR)
 - Irreversible Plug Flow Reactor (PFR)
 
 The models are implemented using a combination of symbolic computation and numerical integration to simulate reaction kinetics and reactor performance under ideal flow conditions.
-
----
-
-## Features
-
-- Symbolic rate expression generation
-- Conversion-based reactor design
-- Numerical integration for residence time and volumetric flowrate
-- Support for variable stoichiometry and rate constants
-- Easy-to-modify code for adding more reactions or reactor types
-
----
 
 ## Reactor Models
 
